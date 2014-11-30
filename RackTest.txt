@@ -1,0 +1,23 @@
+P-1-A220F217 B000Z45678 Height 22.5 Length 17.22 Width 0.75 Weight 17 Number_Of_Items 22
+P-1-A221F217 B000Z45678 Height 22.5 Length 17.22 Width 1 Weight 17 Number_Of_Items 120
+P-1-A222F217 B000Z45678 Height 22.5 Length 17.22 Width 2 Weight 17 Number_Of_Items 92
+P-1-A223F217 B000Z45678 Height 22.5 Length 17.22 Width 3 Weight 17 Number_Of_Items 97
+P-1-A224F217 B000Z45678 Height 22.5 Length 17.22 Width 4 Weight 17 Number_Of_Items 8
+P-1-A225F217 B000Z45678 Height 22.5 Length 17.22 Width 5 Weight 50 Number_Of_Items 35
+P-1-A226F217 B000Z45678 Height 22.5 Length 17.22 Width 6 Weight 17 Number_Of_Items 5
+P-1-A227F217 B000Z45678 Height 22.5 Length 17.22 Width 7 Weight 65 Number_Of_Items 26
+P-1-A228F217 B000Z45678 Height 22.5 Length 17.22 Width 8 Weight 17 Number_Of_Items 9
+P-1-A229F217 B000Z45678 Height 22.5 Length 17.22 Width 9 Weight 17 Number_Of_Items 15
+P-1-A230F217 B000Z45678 Height 22.5 Length 17.22 Width 10 Weight 17 Number_Of_Items 4
+P-1-A231F217 B000Z45678 Height 22.5 Length 17.22 Width 11 Weight 125 Number_Of_Items 1
+P-1-A232F217 B000Z45678 Height 22.5 Length 17.22 Width 12 Weight 17 Number_Of_Items 3
+P-1-A233F217 B000Z45678 Height 22.5 Length 17.22 Width 13 Weight 17 Number_Of_Items 19
+P-1-A234F217 B000Z45678 Height 22.5 Length 17.22 Width 14 Weight 12 Number_Of_Items 13
+P-1-A235F217 B000Z45678 Height 22.5 Length 17.22 Width 15 Weight 17 Number_Of_Items 22
+P-1-A236F217 B000Z45678 Height 22.5 Length 17.22 Width 16 Weight 0.75 Number_Of_Items 6
+P-1-A237F217 B000Z45678 Height 22.5 Length 17.22 Width 17 Weight 17 Number_Of_Items 17
+P-1-A238F217 B000Z45678 Height 22.5 Length 17.22 Width 19 Weight 17 Number_Of_Items 5
+P-1-A240F217 B000Z45678 Height 22.5 Length 17.22 Width 20 Weight 17 Number_Of_Items 33
+P-1-A241F217 B000Z45678 Height 22.5 Length 17.22 Width 21 Weight 17 Number_Of_Items 17
+P-1-A242F217 B000Z45678 Height 22 Length 22 Width 22 Weight 22 Number_Of_Items 2
+
