@@ -1,14 +1,22 @@
 package WarehouseP;
 import java.util.ArrayList;
+import java.util.List;
+
 public class BinLocation {
-	public static int MaxAsins;//max number of unique items allowed
-	public static int NumOfItems;// total items in bin
+	public String binName;
+	private int maxAsins;//max number of unique items allowed
+	private int numOfItems;// total items in bin
 	
-	public static double Volume; // Total volume currently in bin
-	public static double maxVolume;// Max Volume that can fit in bin
+	private double volume; // Total volume currently in bin
+	private double maxVolume;// Max Volume that can fit in bin
 	
-	ArrayList[] binContent = new ArrayList[NumOfItems];
-	
+	public List <Item> listofBins = new ArrayList<Item>();
+	public BinLocation(){
+		
+	}
+	public void setName(String name){
+		this.binName = name;
+	}
 	public void addItem(Object item){}
 	
 	public void removeItem(Object item){}
@@ -16,19 +24,19 @@ public class BinLocation {
 	public void listContent(){}
 	
 	public void setMaxAsins(int max){
-		this.MaxAsins = max;
+		maxAsins = max;
 	                                }
 	public void setmaxVolume(double max){
-		this.maxVolume = max;
+		maxVolume = max;
 	                                    }
-	public double GetmaxVolume(){
+	public double getmaxVolume(){
 		return maxVolume;       
 		                        }
-	public int GetNumOfItems(){
-		return NumOfItems;     
+	public int getNumOfItems(){
+		return numOfItems;     
 		                      }
 	public double getVolume(){
-		return Volume;
+		return volume;
 	                         }
 	
 	
