@@ -1,10 +1,10 @@
-package WarehouseP;
+package Storage;
 
 public class Item {
 	private double weight;  // Dimensions in pounds
 	private double height;  // Dimensions in inches      
-	private double width;   //
-	private double length;  //
+	private double width;   // Dimensions in inches
+	private double length;  // Dimensions in inches
 	private String weightType; // Light , Heavy, TeamLift, or MechLift
 	private String itemType; // Small, Medium, Large,Vertical,Rainbow, or Ladder
 	private String itemSignature;// The UPC associated with the item
