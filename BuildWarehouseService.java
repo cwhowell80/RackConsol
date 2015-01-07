@@ -1,5 +1,4 @@
 package Storage;
-import java.util.*;
 import java.util.Random;
 public class BuildWarehouseService {
 	
@@ -14,6 +13,7 @@ public class BuildWarehouseService {
 		warehouse.listofMods.add(mod1);
 		Mod mod2 = new Mod("P-1-D",10,64,"Medium");
 		warehouse.listofMods.add(mod2);
+		//additional modifications to be made
 		
 		Random random = new Random();
 		int itemSig=1230001;// number used to add to the random number
@@ -24,6 +24,7 @@ public class BuildWarehouseService {
         	for(int b = 0;b<10;b++){//for each isles
         		
         		for(int c = 0;c<64;c++){//for each section
+        			
         			double weight =(double)random.nextInt(49)+1;
         			double height =(double)random.nextInt(23)+1;
         			double width =(double)random.nextInt(23)+1;

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class BinLocation {
 	public String binName;
-	private int maxAsins=120001;//max number of unique items allowed
+	private int maxUniqueAsins=120001;//max number of unique items allowed
 	private int numOfItems;// total items in bin
 	
 	private double volume; // Total volume currently in bin
@@ -23,7 +23,8 @@ public class BinLocation {
 		this.binName = name;
 	}
 	public void addItem(Item item){
-		if(numOfItems<maxAsins){ this.listofItems.add(item);
+		//number of UniqueAsins has not been determined so using a large constant
+		if(numOfItems<maxUniqueAsins){ this.listofItems.add(item);
 		setNumOfItems(numOfItems+1);
 		}
 		else{
@@ -72,7 +73,7 @@ public class BinLocation {
 			System.out.println("There are "+map.size()+" Unique Items in this bin");
 		}
 			
-		}
+		}// end of listContent() method
 	
 	
 	public void setMaxAsins(int max){

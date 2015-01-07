@@ -5,9 +5,12 @@ public class Item {
 	private double height;  // Dimensions in inches      
 	private double width;   // Dimensions in inches
 	private double length;  // Dimensions in inches
+	private String itemSignature;// The UPC associated with the item
+	
+	//both need to be enum classes
 	private String weightType; // Light , Heavy, TeamLift, or MechLift
 	private String itemType; // Small, Medium, Large,Vertical,Rainbow, or Ladder
-	private String itemSignature;// The UPC associated with the item
+	
 	
 	public Item(String itemSignature,double weight,double height,double width, double length)
 	{

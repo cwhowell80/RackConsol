@@ -45,6 +45,7 @@ public class Warehouse {
 	
                               }
 }
+//Each individual Mod class may be subject to individual analysis for consolidation
 class Mod {
 	//Arraylist of all the Isles in this particular Mod
 	public List <Isle> listofIsles = new ArrayList<Isle>();
@@ -115,7 +116,7 @@ class Isle {
 			listofSections.add(section);
 			count +=10;
 			}
-			sectionNumber +=100;
+			sectionNumber +=100;// to create a gap so bins can be added later
 															   }
 									 }
 	
