@@ -6,13 +6,14 @@ public class BuildWarehouseService {
 	public static void main(String[] args){
 		//Builds the warehouse with 2 mods of a single bin type
 		// Single bin types are used for pallets of items
-		Warehouse warehouse = new Warehouse(2,10,64,"SingleBin");
+		
+		Warehouse warehouse = new Warehouse(2,10,64,SectionType.SINGLE);
 		
 		//adds 2 mods of medium type to warehouse
-		Mod mod1 = new Mod("P-1-C",10,64,"Medium");
-		warehouse.listofMods.add(mod1);
-		Mod mod2 = new Mod("P-1-D",10,64,"Medium");
-		warehouse.listofMods.add(mod2);
+		Mod mod1 = new Mod("P-1-C",10,64,SectionType.MEDIUM);
+		warehouse.getListofMods().add(mod1);
+		Mod mod2 = new Mod("P-1-D",10,64,SectionType.MEDIUM);
+		warehouse.getListofMods().add(mod2);
 		//additional modifications to be made
 		
 		Random random = new Random();
@@ -35,8 +36,8 @@ public class BuildWarehouseService {
         			Item item = new Item(("B00"+itemSig)
 					,weight,height,width,length);
         			
-        			warehouse.listofMods.get(a).listofIsles.
-        			get(b).listofSections.get(c).listofbins.
+        			warehouse.getListofMods().get(a).getListofIsles().
+        			get(b).getListofSections().get(c).getListofBins().
         			get(0).addItem(item);
         										}
         			itemSig++;
@@ -47,8 +48,8 @@ public class BuildWarehouseService {
         //Prints the bin contents of the first 40 bins of isle P-1-B205
         for(int e = 0;e<40;e++){
         	
-        warehouse.listofMods.get(1).listofIsles.
-		get(5).listofSections.get(e).listofbins.get(0).listContent();
+        warehouse.getListofMods().get(1).getListofIsles().
+		get(5).getListofSections().get(e).getListofBins().get(0).listContent();
         
 	}
 			}

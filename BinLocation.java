@@ -76,8 +76,8 @@ public class BinLocation {
 		}// end of listContent() method
 	
 	
-	public void setMaxAsins(int max){
-		maxAsins = max;
+	public void setMaxUniqueAsins(int max){
+		maxUniqueAsins = max;
 	                                }
 	public void setmaxVolume(double max){
 		maxVolume = max;

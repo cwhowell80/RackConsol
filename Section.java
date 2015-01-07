@@ -8,15 +8,32 @@ class Section {
 	 * create a section that is composed of more than one type of item */
 	 
 	//A List containing all the bin locations within this Section
-	public List <BinLocation> listofbins = new ArrayList<BinLocation>();
+	private List <BinLocation> listofbins = new ArrayList<BinLocation>();
+	private SectionType sectionType;
 	
-	public Section(String isleName,String sectionType, int sectionNumber){
-		if(sectionType.equals("Small")) createSmallSection(sectionNumber,isleName);
-		else if(sectionType.equals("Medium")) createMediumSection(sectionNumber,isleName);
-		else if(sectionType.equals("Large")) createLargeSection(sectionNumber,isleName);
-		else if(sectionType.equals("Batbin")) createBatBinSection(sectionNumber,isleName);
-		else if(sectionType.equals("SingleBin")) addSingleBin(sectionNumber,isleName); 
-			
+	public Section(String isleName,SectionType sectionType, int sectionNumber){
+		this.sectionType = sectionType;
+		
+		switch(sectionType){
+		case SMALL:
+			createSmallSection(sectionNumber,isleName);
+			break;
+		case MEDIUM:
+			createMediumSection(sectionNumber,isleName);
+			break;
+		case LARGE:
+			createLargeSection(sectionNumber,isleName);
+			break;
+		case BATBIN:
+			createBatBinSection(sectionNumber,isleName);
+			break;
+		case SINGLE:
+			addSingleBin(sectionNumber,isleName); 
+			break;
+		default:
+			System.out.println("Even with the odds against screwing up being "
+				+ "insurmountable, you somehow still found a way");
+							}
 												  
 		//else throw InvalidInputException
 	}		
@@ -102,5 +119,11 @@ class Section {
 				column+= 5;
 			}
 		}
+	}
+	public SectionType getSectionType(){
+		return this.sectionType;
+	}
+	public List<BinLocation> getListofBins(){
+		return this.listofbins;
 	}
 }

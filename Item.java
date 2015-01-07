@@ -8,8 +8,8 @@ public class Item {
 	private String itemSignature;// The UPC associated with the item
 	
 	//both need to be enum classes
-	private String weightType; // Light , Heavy, TeamLift, or MechLift
-	private String itemType; // Small, Medium, Large,Vertical,Rainbow, or Ladder
+	private WeightType weightType; // Light , Heavy, TeamLift, or MechLift
+	private ItemType itemType; // Small, Medium, Large,Vertical,Rainbow, or Ladder
 	
 	
 	public Item(String itemSignature,double weight,double height,double width, double length)
@@ -25,17 +25,15 @@ public class Item {
 	}
 	public void setWeightType(double weight)
 	{
-		String weightType = "";
-		if(weight < 30) weightType = "Light";
-		if(weight >=30 && weight < 50) weightType = "Heavy";
-		if(weight >=50 && weight < 100) weightType = "Team Lift";
-		if(weight >= 100) weightType = "Mech Lift";
-		//else() throw weightException;
-		this.weightType = weightType;
+		if(weight < 30) this.weightType = WeightType.LIGHT;
+		if(weight >=30 && weight < 50) this.weightType = WeightType.HEAVY;
+		if(weight >=50 && weight < 100) this.weightType = WeightType.TEAMLIFT;
+		if(weight >= 100) this.weightType = WeightType.MECHLIFT;
+		//else throw weightException;
+		
 	}
 	public void setItemType(double height, double width, double length)
 	{
-		String itemType;
 		Double longest, longer , shortest;
 		
 		// Code to sort Longest to Shortest dimensions
@@ -67,18 +65,18 @@ public class Item {
 				 shortest = height; }
 			                                    }
 		//Code to determine ItemType
-		if(longest<18 && longer<8 &&shortest<7) itemType = "Small";
-		else if(longest<24) itemType = "Meduim";
-		else if(longest <48 && longer <24) itemType = "Large";
-		else if(longest <72 && longer <24) itemType = "Vertical";
-		else if(longest >72 && longer <24) itemType = "Ladder";
-		else itemType = "RainBow";
-		this.itemType = itemType;
+		if(longest<18 && longer<8 &&shortest<7) this.itemType =ItemType.SMALL;
+		else if(longest<24)  this.itemType =ItemType.MEDIUM;
+		else if(longest <48 && longer <24) this.itemType =ItemType.LARGE;
+		else if(longest <72 && longer <24) this.itemType =ItemType.VERTICAL;
+		else if(longest >72 && longer <24) this.itemType =ItemType.LADDER;
+		else this.itemType =ItemType.RAINBOW;
+		
 	}
-	public String getItemType(){
+	public ItemType getItemType(){
 		return this.itemType;
 	}
-	public String getWeightType(){
+	public WeightType getWeightType(){
 		return this.weightType;
 	}
 	public String getItemSignature(){
@@ -91,7 +89,7 @@ public class Item {
 		return this.height;
 	}
 	public double getLength(){
-		return this.height;
+		return this.length;
 	}
 	public double getWidth(){
 		return this.width;
