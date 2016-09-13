@@ -18,7 +18,7 @@ public class RackData {
 		double width = 0;
 		double Num_of_Items = 0;
 		double Volume = 0;
-		double weight = 0;
+		double weight = 100;
 		double maxV = 40000;
 		SwingUtilities.invokeLater(new Runnable() {
 	         @Override
